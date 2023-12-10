@@ -8,3 +8,55 @@ body {
 .hero img {
   filter:  drop-shadow(0 0 80px rgba(255, 255, 255, 0.212));
 }
+
+.movie {
+  max-width: 300px;
+  cursor: pointer;
+  height: 100%;
+  transition: all 0.8s;
+}
+
+.movie:hover {
+  scale: 1.05;
+}
+
+.banner {
+  position: relative;
+  height: 20vh;
+}
+
+.banner-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+}
+
+.banner-bg span {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.actor-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.actor-card p {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+  place-items: center;
+  text-align: center;
+}
+
+.actor-card:hover > p {
+  display: grid;
+}
